@@ -1,0 +1,53 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.form{
+  margin-top: 40px;
+}
+
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 520px;
+  padding: 50px 10px 60px;
+  background: var(--color-white);
+  border-radius: 10px;
+  border: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.input{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.button{
+  margin: 40px auto 0;
+  max-width: 176px;
+  width: 100%;
+}
+
+.hideButton {
+  width: fit-content;
+  padding: 0;
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  border: none;
+}
+
+.hideButton.open > svg path { 
+  stroke: var(--color-blue);
+}
+
+@media (min-width: 767px) {
+  .wrapper{
+    padding: 50px 88px 60px;
+  }
+}

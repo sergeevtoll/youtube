@@ -1,0 +1,14 @@
+.button{
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+.search{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.white{
+  color: var(--color-blue);
+  background: var(--color-white);
+}

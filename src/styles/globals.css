@@ -1,0 +1,71 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-dark);
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+button, input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  outline: none;
+  border: none;
+  background: none;
+  box-shadow: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input, label, button{
+  display: block;
+}
+
+button {
+  padding: 13px 15px;
+  transition: .3s;
+  border: 1px solid var(--color-blue);
+}
+
+button:disabled{
+  opacity: .5;
+}
+
+input {
+  padding: 12px 15px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border2);
+}
+
+input::placeholder{
+  color: var(--color-gray-rgba);
+}
+
+input:disabled{
+  color: var(--color-gray-rgba);
+  background: var(--color-white2);
+}
+
+input:focus{
+  border-color: var(--color-blue);
+  background: var(--color-bg-active);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

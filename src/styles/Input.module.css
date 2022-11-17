@@ -1,0 +1,28 @@
+.label{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 138%;
+}
+
+.label.gray{
+  color: var(--color-gray);
+}
+
+.inputWrapper{
+  position: relative;
+  width: 100%;
+}
+
+.require{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-red);
+}
+
+.search{
+  height: 52px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
