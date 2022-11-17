@@ -32,7 +32,7 @@ export const HomePage = () => {
   const [openModal, setOpenModal] = useState(false)
   const [saved, setSsaved] = useState(false)
   const [showNotice, setShowNotice] = useState(false)
-  const { items = [], pageInfo = {} } = data || {}
+  const { items, pageInfo } = data || {}
   const handleAdd = (item: FAVOURIT_DATA) => {
     const [id] = uniqueId()
     dispatch(addFavourite({ ...item, id }))
@@ -115,15 +115,15 @@ export const HomePage = () => {
                 </div>
               </div>
               <div className={styles[listType]}>
-                {items.map((item: any) => (
-                  <div key={item.etag}>
-                    <div className={styles.itemImg}>
-                      <img src={item.snippet.thumbnails.medium.url} alt='' />
+                {items.map(item => (
+                  <div key={item?.etag}>
+                    <div className={styles?.itemImg}>
+                      <img src={item?.snippet?.thumbnails?.medium?.url} alt='' />
                     </div>
                     <div>
-                      <span className={styles.itemTitle}>{item.snippet.title}</span>
+                      <span className={styles.itemTitle}>{item?.snippet?.title}</span>
                       <span className={`${styles.itemTitle} ${styles.description}`}>
-                        {item.snippet.channelTitle}
+                        {item?.snippet?.channelTitle}
                       </span>
                     </div>
                   </div>
